@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <!--son fundamentales pueda categorisar o posicionar en las busquedas-->
+    son fundamentales pueda categorisar o posicionar en las busquedas
     <title>Login en sistema</title>
     <meta charset="iso-8559-1" />
-    <!--da una referencia a la busqueda-->
+    da una referencia a la busqueda
 
 </head>
 
@@ -25,10 +25,10 @@
         <div class="centrado"><img class="centrado" src="imagenes/logog.png" alt="" width="192" height="62"></div>
         <h1>Ingresar</h1>
         <form action="ppal.html">
-            <!-- USERNAME INPUT -->
+            USERNAME INPUT
             <label for="username">Usuario:</label>
             <input type="text" placeholder="Ingrese su Usuario">
-            <!-- PASSWORD INPUT -->
+            PASSWORD INPUT
             <label for="password">Contraseña</label>
             <input type="password" placeholder="Ingrese su Contraseña">
             <input type="submit" value="Aceptar">
@@ -37,5 +37,68 @@
         </form>
     </div>
 </body>
+
+</html>-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta charset="iso-8559-1" />
+    <title>Tuvi Online</title>
+    <link rel="stylesheet" href="./css/vaidroll.css">
+</head>
+
+<body>
+    <div class="cajafuera" align="center">
+
+        <div class="formulariocaja">
+            <form method="post" action="" name="vaidrollteam">
+                <!--<div class="formtitulo">Login</div>-->
+                <div class="centrado"><img class="centrado" src="imagenes/logog.png" alt="" width="292" height="62"></div>
+                <div align="left" class="textoscajas">&#128273;Ingresar Usuario:</div>
+                <input type="text" name="txtusuario" class="cajaentradatexto">
+                <div align="left" class="textoscajas">
+                    &#128274;Ingresar Contraseña:
+                </div>
+                <input type="password" name="txtpassword" id="txtpassword" class="cajaentradatexto">
+                <div class="afcheckbox1" align="left">
+                    <div style="float:left;">
+                        <input type="checkbox" onclick="verpassword()">
+                    </div>
+                    <div style="float:left;	color:white;">
+                        Mostrar contraseña
+                    </div>
+                </div><br>
+                <div class="centrado"><input class="btn" type="submit" value="Iniciar sesión" class="botonenviar"></div>
+                
+
+                <div style="margin-top:5%;	color:white;">¿Necesitas una cuenta? <a href="#">Registrar</a></div>
+            </form>
+        </div>
+        <div class="autor">
+            <div>
+            </div>
+</body>
+
+<script>
+    function verpassword() {
+        var tipo = document.getElementById("txtpassword");
+        if (tipo.type == "password") {
+            tipo.type = "text";
+        }
+        else {
+            tipo.type = "password";
+        }
+    }
+</script>
 
 </html>
